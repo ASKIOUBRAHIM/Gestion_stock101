@@ -4,17 +4,21 @@
  */
 package Forms;
 
+import java.awt.Color;
+import javax.swing.UIManager;
+
 /**
  *
  * @author brahi
  */
 public class Accueil extends javax.swing.JInternalFrame {
-
+        
     /**
      * Creates new form Accueil
      */
     public Accueil() {
         initComponents();
+        UIManager.put("JFrame.activeTitleBackground", Color.red);
     }
 
     /**
@@ -26,18 +30,49 @@ public class Accueil extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        back1_Acc = new javax.swing.JPanel();
+        back2_Acc = new javax.swing.JPanel();
+
         setTitle("Accueil ");
-        setPreferredSize(new java.awt.Dimension(720, 390));
+        setPreferredSize(new java.awt.Dimension(950, 300));
+
+        back1_Acc.setBackground(new java.awt.Color(255, 255, 0));
+
+        back2_Acc.setBackground(new java.awt.Color(0, 0, 0));
+
+        javax.swing.GroupLayout back2_AccLayout = new javax.swing.GroupLayout(back2_Acc);
+        back2_Acc.setLayout(back2_AccLayout);
+        back2_AccLayout.setHorizontalGroup(
+            back2_AccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 456, Short.MAX_VALUE)
+        );
+        back2_AccLayout.setVerticalGroup(
+            back2_AccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 293, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout back1_AccLayout = new javax.swing.GroupLayout(back1_Acc);
+        back1_Acc.setLayout(back1_AccLayout);
+        back1_AccLayout.setHorizontalGroup(
+            back1_AccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(back1_AccLayout.createSequentialGroup()
+                .addComponent(back2_Acc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 478, Short.MAX_VALUE))
+        );
+        back1_AccLayout.setVerticalGroup(
+            back1_AccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(back2_Acc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 704, Short.MAX_VALUE)
+            .addComponent(back1_Acc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 360, Short.MAX_VALUE)
+            .addComponent(back1_Acc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -45,5 +80,7 @@ public class Accueil extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel back1_Acc;
+    private javax.swing.JPanel back2_Acc;
     // End of variables declaration//GEN-END:variables
 }

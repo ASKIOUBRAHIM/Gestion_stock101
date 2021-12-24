@@ -15,6 +15,7 @@ public class Dashbord_Admin extends javax.swing.JFrame {
         Global_container = new javax.swing.JPanel();
         nav_bar = new javax.swing.JPanel();
         sedeconnecter = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         section_bar = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         ACC = new javax.swing.JLabel();
@@ -31,7 +32,9 @@ public class Dashbord_Admin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        nav_bar.setBackground(new java.awt.Color(255, 102, 0));
+        Global_container.setBackground(new java.awt.Color(255, 255, 51));
+
+        nav_bar.setBackground(new java.awt.Color(0, 51, 51));
 
         sedeconnecter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Forms/se-deconnecter.png"))); // NOI18N
         sedeconnecter.addActionListener(new java.awt.event.ActionListener() {
@@ -40,26 +43,40 @@ public class Dashbord_Admin extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Yu Gothic Medium", 0, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Espace Administrateur ");
+
         javax.swing.GroupLayout nav_barLayout = new javax.swing.GroupLayout(nav_bar);
         nav_bar.setLayout(nav_barLayout);
         nav_barLayout.setHorizontalGroup(
             nav_barLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, nav_barLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(92, 92, 92)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(sedeconnecter, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(36, 36, 36))
         );
         nav_barLayout.setVerticalGroup(
             nav_barLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, nav_barLayout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
+            .addGroup(nav_barLayout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(sedeconnecter, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, nav_barLayout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addComponent(jLabel1)
                 .addContainerGap())
         );
 
-        section_bar.setBackground(new java.awt.Color(153, 153, 255));
+        section_bar.setBackground(new java.awt.Color(255, 255, 0));
+        section_bar.setForeground(new java.awt.Color(255, 255, 0));
+
+        jPanel5.setBackground(new java.awt.Color(255, 102, 255));
 
         ACC.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
+        ACC.setForeground(new java.awt.Color(255, 255, 255));
         ACC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ACC.setText("Accueil");
         ACC.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -86,10 +103,13 @@ public class Dashbord_Admin extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel6.setBackground(new java.awt.Color(255, 102, 255));
         jPanel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
+        FOUR.setBackground(new java.awt.Color(255, 102, 255));
         FOUR.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
-        FOUR.setText("fournisseur");
+        FOUR.setForeground(new java.awt.Color(255, 255, 255));
+        FOUR.setText("Entreprise");
         FOUR.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 FOURMousePressed(evt);
@@ -101,7 +121,7 @@ public class Dashbord_Admin extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addContainerGap(25, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(FOUR)
                 .addGap(22, 22, 22))
         );
@@ -113,7 +133,10 @@ public class Dashbord_Admin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel7.setBackground(new java.awt.Color(255, 102, 255));
+
         Prod.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
+        Prod.setForeground(new java.awt.Color(255, 255, 255));
         Prod.setText("Produit");
         Prod.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -138,10 +161,12 @@ public class Dashbord_Admin extends javax.swing.JFrame {
                 .addGap(19, 19, 19))
         );
 
+        jPanel8.setBackground(new java.awt.Color(255, 102, 255));
         jPanel8.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
 
         STO.setFont(new java.awt.Font("Book Antiqua", 1, 22)); // NOI18N
-        STO.setText("STOCK ");
+        STO.setForeground(new java.awt.Color(255, 255, 255));
+        STO.setText("Stock");
         STO.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 STOMousePressed(evt);
@@ -165,7 +190,10 @@ public class Dashbord_Admin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel9.setBackground(new java.awt.Color(255, 102, 255));
+
         Clien.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
+        Clien.setForeground(new java.awt.Color(255, 255, 255));
         Clien.setText("employes");
         Clien.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -222,7 +250,7 @@ public class Dashbord_Admin extends javax.swing.JFrame {
 
         container.setBackground(new java.awt.Color(204, 255, 204));
         container.setName("background two"); // NOI18N
-        container.setPreferredSize(new java.awt.Dimension(760, 230));
+        container.setPreferredSize(new java.awt.Dimension(950, 300));
         container.setLayout(new javax.swing.OverlayLayout(container));
 
         accueil1.setVisible(true);
@@ -235,9 +263,10 @@ public class Dashbord_Admin extends javax.swing.JFrame {
             .addComponent(nav_bar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(Global_containerLayout.createSequentialGroup()
                 .addGap(2, 2, 2)
-                .addComponent(section_bar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(container, javax.swing.GroupLayout.PREFERRED_SIZE, 720, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(section_bar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(container, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         Global_containerLayout.setVerticalGroup(
             Global_containerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -320,6 +349,8 @@ public class Dashbord_Admin extends javax.swing.JFrame {
             Dashbord_Admin mywindow = new Dashbord_Admin();
             
             mywindow.setVisible(true);
+            mywindow.setResizable(false);
+            mywindow.setTitle("Gestion de Stock ");
             
             
         });
@@ -334,6 +365,7 @@ public class Dashbord_Admin extends javax.swing.JFrame {
     private javax.swing.JLabel STO;
     private Forms.Accueil accueil1;
     private javax.swing.JPanel container;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
