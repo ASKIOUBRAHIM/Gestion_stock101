@@ -31,13 +31,32 @@ public class Accueil extends javax.swing.JInternalFrame {
     private void initComponents() {
 
         back1_Acc = new javax.swing.JPanel();
-        back2_Acc = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
+        back2_Acc = new javax.swing.JPanel();
 
         setTitle("Accueil ");
         setPreferredSize(new java.awt.Dimension(950, 300));
 
         back1_Acc.setBackground(new java.awt.Color(255, 255, 0));
+
+        jButton1.setText("Actualiser");
+
+        javax.swing.GroupLayout back1_AccLayout = new javax.swing.GroupLayout(back1_Acc);
+        back1_Acc.setLayout(back1_AccLayout);
+        back1_AccLayout.setHorizontalGroup(
+            back1_AccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(back1_AccLayout.createSequentialGroup()
+                .addContainerGap(383, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addContainerGap())
+        );
+        back1_AccLayout.setVerticalGroup(
+            back1_AccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(back1_AccLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton1)
+                .addContainerGap(236, Short.MAX_VALUE))
+        );
 
         back2_Acc.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -49,39 +68,22 @@ public class Accueil extends javax.swing.JInternalFrame {
         );
         back2_AccLayout.setVerticalGroup(
             back2_AccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        jButton1.setText("Actualiser");
-
-        javax.swing.GroupLayout back1_AccLayout = new javax.swing.GroupLayout(back1_Acc);
-        back1_Acc.setLayout(back1_AccLayout);
-        back1_AccLayout.setHorizontalGroup(
-            back1_AccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(back1_AccLayout.createSequentialGroup()
-                .addComponent(back2_Acc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 389, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addContainerGap())
-        );
-        back1_AccLayout.setVerticalGroup(
-            back1_AccLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(back2_Acc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(back1_AccLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton1)
-                .addContainerGap(259, Short.MAX_VALUE))
+            .addGap(0, 270, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(back1_Acc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(back2_Acc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(back1_Acc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(back1_Acc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(back2_Acc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
