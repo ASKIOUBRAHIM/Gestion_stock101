@@ -1,1 +1,1 @@
-# Gsto
+# Gestion de stock 
