@@ -34,7 +34,7 @@ public class Dashbord_Admin extends javax.swing.JFrame {
 
         Global_container.setBackground(new java.awt.Color(255, 255, 51));
 
-        nav_bar.setBackground(new java.awt.Color(0, 51, 51));
+        nav_bar.setBackground(new java.awt.Color(0, 0, 0));
 
         sedeconnecter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Forms/se-deconnecter.png"))); // NOI18N
         sedeconnecter.addActionListener(new java.awt.event.ActionListener() {
@@ -73,7 +73,7 @@ public class Dashbord_Admin extends javax.swing.JFrame {
         section_bar.setBackground(new java.awt.Color(255, 255, 0));
         section_bar.setForeground(new java.awt.Color(255, 255, 0));
 
-        jPanel5.setBackground(new java.awt.Color(255, 102, 255));
+        jPanel5.setBackground(new java.awt.Color(51, 0, 51));
 
         ACC.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         ACC.setForeground(new java.awt.Color(255, 255, 255));
@@ -103,7 +103,7 @@ public class Dashbord_Admin extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel6.setBackground(new java.awt.Color(255, 102, 255));
+        jPanel6.setBackground(new java.awt.Color(51, 0, 51));
         jPanel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
         FOUR.setBackground(new java.awt.Color(255, 102, 255));
@@ -133,7 +133,7 @@ public class Dashbord_Admin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel7.setBackground(new java.awt.Color(255, 102, 255));
+        jPanel7.setBackground(new java.awt.Color(51, 0, 51));
 
         Prod.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         Prod.setForeground(new java.awt.Color(255, 255, 255));
@@ -161,7 +161,7 @@ public class Dashbord_Admin extends javax.swing.JFrame {
                 .addGap(19, 19, 19))
         );
 
-        jPanel8.setBackground(new java.awt.Color(255, 102, 255));
+        jPanel8.setBackground(new java.awt.Color(51, 0, 51));
         jPanel8.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
 
         STO.setFont(new java.awt.Font("Book Antiqua", 1, 22)); // NOI18N
@@ -190,7 +190,7 @@ public class Dashbord_Admin extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel9.setBackground(new java.awt.Color(255, 102, 255));
+        jPanel9.setBackground(new java.awt.Color(51, 0, 51));
 
         Clien.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
         Clien.setForeground(new java.awt.Color(255, 255, 255));
@@ -205,10 +205,10 @@ public class Dashbord_Admin extends javax.swing.JFrame {
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
                 .addComponent(Clien)
-                .addGap(31, 31, 31))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
