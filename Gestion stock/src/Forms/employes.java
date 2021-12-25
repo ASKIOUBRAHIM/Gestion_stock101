@@ -115,8 +115,8 @@ public class employes extends javax.swing.JInternalFrame {
 
         jPanel2.setBackground(new java.awt.Color(51, 51, 0));
 
-        AJOUTER.setBackground(new java.awt.Color(240, 114, 8));
-        AJOUTER.setForeground(new java.awt.Color(153, 0, 153));
+        AJOUTER.setBackground(new java.awt.Color(255, 255, 0));
+        AJOUTER.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         AJOUTER.setText("AJOUTER");
         AJOUTER.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,8 +124,8 @@ public class employes extends javax.swing.JInternalFrame {
             }
         });
 
-        SUPPRIMER.setBackground(new java.awt.Color(240, 114, 8));
-        SUPPRIMER.setForeground(new java.awt.Color(153, 0, 153));
+        SUPPRIMER.setBackground(new java.awt.Color(255, 255, 0));
+        SUPPRIMER.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         SUPPRIMER.setText("SUPPRIMER");
         SUPPRIMER.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,8 +133,8 @@ public class employes extends javax.swing.JInternalFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(255, 153, 0));
-        jButton1.setForeground(new java.awt.Color(153, 0, 153));
+        jButton1.setBackground(new java.awt.Color(255, 255, 0));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton1.setText("ACTUALISER");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -182,8 +182,8 @@ public class employes extends javax.swing.JInternalFrame {
             }
         });
 
-        RECHERCHER.setBackground(new java.awt.Color(255, 153, 0));
-        RECHERCHER.setForeground(new java.awt.Color(153, 0, 102));
+        RECHERCHER.setBackground(new java.awt.Color(255, 255, 0));
+        RECHERCHER.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         RECHERCHER.setText("CHERCHER");
         RECHERCHER.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
