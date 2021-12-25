@@ -30,8 +30,8 @@
     </Container>
   </NonVisualComponents>
   <Properties>
-    <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-      <Connection code="Color.decode(&quot;#110133&quot;)" type="code"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="33" green="33" red="33" type="rgb"/>
     </Property>
     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
       <Border info="null"/>
@@ -246,7 +246,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Les d&#xe8;rniers operations effectu&#xe9; par les employess "/>
+            <Property name="text" type="java.lang.String" value="Les d&#xe9;rniers operations effectu&#xe9; par les employess "/>
           </Properties>
         </Component>
       </SubComponents>

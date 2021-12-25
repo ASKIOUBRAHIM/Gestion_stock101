@@ -1,16 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
- */
+
 package Forms;
 
-
-
-/**
- *
- * @author brahi
- */
 import java.awt.*;
+import javax.swing.border.Border;
+
 public class Accueil extends javax.swing.JInternalFrame {
         
     /**
@@ -20,6 +13,8 @@ public class Accueil extends javax.swing.JInternalFrame {
         initComponents();
        
         ((javax.swing.plaf.basic.BasicInternalFrameUI) this.getUI()).setNorthPane(null);
+        
+        
         
        
         
@@ -61,7 +56,7 @@ public class Accueil extends javax.swing.JInternalFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        setBackground(Color.decode("#110133"));
+        setBackground(new java.awt.Color(51, 51, 51));
         setBorder(null);
         setTitle("Accueil ");
         setFrameIcon(null);
@@ -138,7 +133,7 @@ public class Accueil extends javax.swing.JInternalFrame {
         jLabel4.setBackground(new java.awt.Color(255, 255, 0));
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel4.setText("Les dèrniers operations effectué par les employess ");
+        jLabel4.setText("Les dérniers operations effectué par les employess ");
 
         javax.swing.GroupLayout back2_AccLayout = new javax.swing.GroupLayout(back2_Acc);
         back2_Acc.setLayout(back2_AccLayout);
