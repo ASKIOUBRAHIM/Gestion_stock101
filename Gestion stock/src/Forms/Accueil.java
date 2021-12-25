@@ -62,7 +62,7 @@ public class Accueil extends javax.swing.JInternalFrame {
         setFrameIcon(null);
         setPreferredSize(new java.awt.Dimension(950, 300));
 
-        back2_Acc.setBackground(new java.awt.Color(0, 0, 0));
+        back2_Acc.setBackground(new java.awt.Color(51, 51, 0));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 0));
 

@@ -49,7 +49,7 @@ public class Fournisseur extends javax.swing.JInternalFrame {
         setBorder(null);
         setTitle("Fournisseur");
 
-        jPanel5.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel5.setBackground(new java.awt.Color(51, 51, 0));
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 0));
@@ -98,7 +98,7 @@ public class Fournisseur extends javax.swing.JInternalFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setBackground(new java.awt.Color(51, 51, 0));
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
         AJOUTER_COM.setBackground(new java.awt.Color(255, 255, 0));
